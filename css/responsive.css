@@ -1,0 +1,167 @@
+:root{
+    /* --blue: #2454fb; */
+    --blue: #2653FF;
+    --dark-color: #0838f7;
+    --black:rgb(49, 49, 49);
+    --light-color: #666;
+    --border: .1rem solid rgba(0, 0, 0, .1);
+    --border-hover: .1rem solid var(--black);
+    --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+       
+       
+       /* meadia queries  */
+
+@media (max-width:991px){
+    html{
+        font-size: 55%;
+    }
+
+    .heading{
+        margin-top: 5rem;
+    }
+
+    .header .header-1{
+        padding: 2rem;
+    }
+
+    section{
+        padding: 3rem 2rem;
+    }
+}
+
+@media (max-width:768px){
+
+
+    html{
+        scroll-padding-top: 0;
+    }
+    body{
+        margin-bottom: 6rem;
+    }
+
+    .heading{
+        margin-top: 5rem;
+    }
+
+    .header .header-2{
+        display: none;
+    }
+
+    .header .header-1{
+        box-shadow: var(--box-shadow); 
+        position: relative;  
+    }
+
+    .header .header-1 .search-form{
+        position: absolute;
+        top: -120%;
+        right: 2rem;
+        width: 90%;
+        height: 5rem;
+        box-shadow: var(--box-shadow);
+    }
+
+    .header .header-1 .search-form.active{
+        top: 120%;
+    }
+
+    .header .header-1 .icons #search-btn{
+        display: inline-block;
+    }
+
+    .bottom-navbar{
+        display: inline-block;
+    }
+
+    .bottom-navbar a{
+      
+        padding: 2rem 2.8rem;
+    }
+
+    .home .row .content{
+        align-items: center;
+    }
+
+    .home .row h1{
+        font-size: 3.5rem;
+        color: var(--black);
+    }
+
+    .newsletter{
+        background-position:inherit;
+    }
+
+    .newsletter form{
+        margin-left: 0rem;
+        max-width: 100%;
+    }
+    .newsletter form .box{
+        width: 80%;
+    }
+
+    .arrivals .view-btn{
+        position:absolute;
+        left: 40%;
+        padding: 1rem 2rem;
+       
+    
+    }
+
+    .story-banner{
+        margin-top: 6rem;
+    }
+    .author-of-month .container .box{
+        display: block;}
+     
+        .author-of-month .container .box .content{
+         padding: 1.5rem;
+         width: 100%
+     }
+      
+     .author-of-month .container .box .image img{
+         border-radius: 50%;
+         width: 20rem;
+         height: 20rem;
+         margin-left: 6rem;
+         margin-bottom: 2rem;
+     }
+     .request{
+         display: block;
+         text-align: center;
+         padding: 4rem 0;
+     }
+ 
+    .footer .container{
+        text-align: center;
+    }
+
+}
+
+@media (max-width:450px){
+    html{
+        font-size: 50%;    
+}
+.bottom-navbar a{
+    padding: 2rem 2rem;
+}
+
+.category .book-category .card{
+    margin-left: 2rem;
+   
+}
+
+}
+
+@media (max-width:305px){
+    html{
+        font-size: 50%;    
+}
+
+.bottom-navbar a{
+    color: #fff;
+    font-size: 2rem;
+    padding: 2rem 1.5rem;
+}
+
+}
